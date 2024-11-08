@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <button id="addRecipeBtn">Add Recipe</button>
+    </header>
+
+    <main>
+        <!-- Search Recipes -->
+        <section id="searchSection">
+            <input type="text" id="searchInput" placeholder="Search recipes by name or ingredients">
+        </section>
+
+        <!-- Recipe List -->
+        <section id="recipeList">
+            <!-- Recipe items will be dynamically added here -->
+        </section>
+
+        <!-- Modal Overlay -->
+        <div id="modalOverlay"></div>
+
+        <!-- Add Recipe Form -->
+        <section id="addRecipeForm">
+            <h2>Add a New Recipe</h2>
+            <form id="recipeForm">
+                <label for="name">Recipe Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" required>
+
+                <label for="ingredients">Ingredients (comma-separated):</label>
+                <textarea id="ingredients" rows="3" required></textarea>
+
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" rows="5" required></textarea>
+
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
